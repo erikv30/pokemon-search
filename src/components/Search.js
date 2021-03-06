@@ -1,24 +1,25 @@
 import React, { useState } from 'react'
 
-const Search = ({ getQuery }) => {
+const Search = ({getPokemonName, searchPokemon}) => {
     const [text, setText] = useState('')
 
     const onChange = (q) => {
         setText(q)
-        getQuery(q)
+        getPokemonName(q)
     }
 
-    return (
-        <section>
+      return (
+        <section className='form'>
             <form>
                 <input 
                 type='text' 
                 className='form-comtrol' 
-                placeholder='Search your Pokémon: charmander, cyndaquil, torchic, etc... ' 
-                value={text} 
+                placeholder='Example: squirtle, etc... ' 
+                value={text}
                 onChange={(e) => onChange(e.target.value)}
                 autoFocus />
             </form>
+            <button className='btn' type='submit' onClick={searchPokemon}><i className="fas fa-search"></i> Search</button>
         </section>
     )
 }
