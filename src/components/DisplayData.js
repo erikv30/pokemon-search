@@ -4,10 +4,10 @@ const DisplayData = ({isLoaded, items}) => {
     return (
         <section className='data'>
             {!isLoaded ? (
-                <>
+                <div className='message-cont'>
                 <h1 className='message'>Please search a Pokemon!</h1>
                 <p>...with the name or the id from 1 to 898</p>
-                </>
+                </div>
             ) : (
                 <div className='grid'>
                 <h2 className='name'>{items.name}</h2>

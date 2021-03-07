@@ -14,7 +14,7 @@ const Search = ({getPokemonName, searchPokemon}) => {
                 <input 
                 type='text' 
                 className='form-comtrol' 
-                placeholder='Example: squirtle, etc... ' 
+                placeholder='Example: cyndaquil or 155' 
                 value={text}
                 onChange={(e) => onChange(e.target.value)}
                 autoFocus />

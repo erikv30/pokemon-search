@@ -97,6 +97,17 @@ input[type="text"] {
   margin-top: 70px;
 }
 
+.message-cont {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+.message-cont > p {
+  margin: 20px 30px;
+}
+
 .grid {
   display: flex;
   flex-wrap: wrap;
