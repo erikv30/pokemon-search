@@ -27,7 +27,7 @@ a {
 }
 
 header {
-  height: 150px;
+  height: 125px;
 }
 
 .center {
@@ -67,7 +67,7 @@ input[type="text"] {
   display: block;
   color: #fff;
   background-color: lightslategrey;
-  font-size: 1.2em;
+  font-size: 1em;
   text-align: center;
   padding: 10px 15px;
   border: 0;
@@ -99,14 +99,21 @@ input[type="text"] {
 
 .grid {
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
   align-items: center;
+  justify-content: center;
+}
+
+.pictures {
+  display: inline-flexbox;
+  width: 300px;
 }
 
 .name {
   font-size: 30px;
   text-transform: capitalize;
-  margin: 15px 0;
+  margin-bottom: 40px;
+  width: 100%;
 }
 
 .row {
@@ -117,4 +124,29 @@ input[type="text"] {
 .row > img {
   width: 150px;
   height: auto;
+}
+
+.description {
+  text-align: center;
+  align-items: center;
+  width: 300px;
+  height: auto;
+}
+
+.type {
+  font-size: 20px;
+  padding: 10px 20px;
+  margin: 10px 0;
+}
+
+.stats {
+  font-size: 18px;
+  margin: 10px 0;
+}
+
+.description span {
+  font-size: 18px;
+  text-transform: capitalize;
+  width: auto;
+  margin: 5px;
 }

@@ -17,8 +17,6 @@ function App() {
     weight:'',
     hp:'',
     baseAbility1:'',
-    baseAbility2:'',
-    baseExperience:'',
   })
   const [isLoaded, setIsLoaded] = useState(false)
   const [pokemonName, setPokemonName] = useState('')
@@ -38,8 +36,6 @@ function App() {
     weight: result.data.weight,
     hp: result.data.stats[0].base_stat,
     baseAbility1: result.data.abilities[0].ability.name,
-    baseAbility2: result.data.abilities[1].ability.name,
-    baseExperience: result.data.base_experience,
     })
 
     setIsLoaded(true)
